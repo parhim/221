@@ -1,0 +1,279 @@
+BEGINNING TESTS FOR PART 1A
+*** TESTING INSERT ***
+adding item1,  with number 7 to heap
+Top of heap is: text_item{"item1",7}
+7
+adding item2,  with number 9 to heap
+Top of heap is: text_item{"item2",9}
+9
+     7
+adding item3,  with number 56 to heap
+Top of heap is: text_item{"item3",56}
+     9
+56
+     7
+adding item4,  with number 85 to heap
+Top of heap is: text_item{"item4",85}
+     9
+85
+     56
+          7
+adding item5,  with number 86 to heap
+Top of heap is: text_item{"item5",86}
+     9
+86
+          56
+     85
+          7
+adding item6,  with number 0 to heap
+Top of heap is: text_item{"item5",86}
+     9
+          0
+86
+          56
+     85
+          7
+adding item7,  with number -1 to heap
+Top of heap is: text_item{"item5",86}
+          -1
+     9
+          0
+86
+          56
+     85
+          7
+adding item8,  with number -2 to heap
+Top of heap is: text_item{"item5",86}
+          -1
+     9
+          0
+86
+          56
+     85
+          7
+               -2
+adding item9,  with number -3 to heap
+Top of heap is: text_item{"item5",86}
+          -1
+     9
+          0
+86
+          56
+     85
+               -3
+          7
+               -2
+adding item10,  with number -4 to heap
+Top of heap is: text_item{"item5",86}
+          -1
+     9
+          0
+86
+          56
+               -4
+     85
+               -3
+          7
+               -2
+adding item11,  with number 60 to heap
+Top of heap is: text_item{"item5",86}
+          -1
+     9
+          0
+86
+               56
+          60
+               -4
+     85
+               -3
+          7
+               -2
+adding item12,  with number 73 to heap
+Top of heap is: text_item{"item5",86}
+          -1
+     73
+          9
+               0
+86
+               56
+          60
+               -4
+     85
+               -3
+          7
+               -2
+adding item13,  with number 96 to heap
+Top of heap is: text_item{"item13",96}
+          -1
+     86
+               9
+          73
+               0
+96
+               56
+          60
+               -4
+     85
+               -3
+          7
+               -2
+adding item14,  with number 138 to heap
+Top of heap is: text_item{"item14",138}
+          86
+               -1
+     96
+               9
+          73
+               0
+138
+               56
+          60
+               -4
+     85
+               -3
+          7
+               -2
+adding item15,  with number 291 to heap
+Top of heap is: text_item{"item15",291}
+               86
+          96
+               -1
+     138
+               9
+          73
+               0
+291
+               56
+          60
+               -4
+     85
+               -3
+          7
+               -2
+
+BEGINNING TESTS FOR PART 1B
+*** TESTING DELETEMAX ***
+Item returned from heap delete: text_item{"item15",291}
+Top of heap is now: text_item{"item14",138}
+          86
+               -1
+     96
+               9
+          73
+               0
+138
+               56
+          60
+               -4
+     85
+               -3
+          7
+               -2
+Item returned from heap delete: text_item{"item14",138}
+Top of heap is now: text_item{"item13",96}
+Item returned from heap delete: text_item{"item13",96}
+Top of heap is now: text_item{"item5",86}
+Item returned from heap delete: text_item{"item5",86}
+Top of heap is now: text_item{"item4",85}
+Item returned from heap delete: text_item{"item4",85}
+Top of heap is now: text_item{"item12",73}
+Item returned from heap delete: text_item{"item12",73}
+Top of heap is now: text_item{"item11",60}
+Item returned from heap delete: text_item{"item11",60}
+Top of heap is now: text_item{"item3",56}
+Item returned from heap delete: text_item{"item3",56}
+Top of heap is now: text_item{"item2",9}
+Item returned from heap delete: text_item{"item2",9}
+Top of heap is now: text_item{"item1",7}
+Item returned from heap delete: text_item{"item1",7}
+Top of heap is now: text_item{"item6",0}
+Item returned from heap delete: text_item{"item6",0}
+Top of heap is now: text_item{"item7",-1}
+Item returned from heap delete: text_item{"item7",-1}
+Top of heap is now: text_item{"item8",-2}
+Item returned from heap delete: text_item{"item8",-2}
+Top of heap is now: text_item{"item9",-3}
+Item returned from heap delete: text_item{"item9",-3}
+Top of heap is now: text_item{"item10",-4}
+Item returned from heap delete: text_item{"item10",-4}
+You have attempted to remove the last node in the heap! ~ this is the expected outcome
+          2
+     45
+          10
+250
+          12
+     14
+          9
+               -9
+Item returned from heap delete: text_item{"item10",250}
+Top of heap is now: text_item{"item10",45}
+          2
+     10
+          -9
+45
+          12
+     14
+          9
+Item returned from heap delete: text_item{"item10",45}
+Top of heap is now: text_item{"item10",14}
+     10
+          -9
+14
+          2
+     12
+          9
+
+***with sample text3***
+BEGINNING TESTS FOR PART 2
+Found: where in the input file 0 time(s).
+add:1, apple:2, banana:1, blueberry:1, cantaloupe:1, durian:3, raspberry:1, zebra:2, 
+the root of the tree is:0x7f9c9bd00100
+your code is good
+your code is nice
+Found: bloop in the input file 0 time(s).
+
+BEGINNING TESTS FOR PART 3
+*** Top 5 most frequent words: ***
+1 : durian - used 3 times
+2 : zebra - used 2 times
+3 : apple - used 2 times
+4 : banana - used 1 times
+5 : cantaloupe - used 1 times
+
+*** Top 5 most frequent words with at least 10 letters ***
+1 : cantaloupe - used 1 times
+
+*** Top 5 most frequent words that begin with c ***
+1 : cantaloupe - used 1 times
+dhcp-128-189-242-100:student-files leticianakajima$ 
+
+**with sample text2**
+BEGINNING TESTS FOR PART 2
+Found: where in the input file 608 time(s).
+the root of the tree is:0x7ff5c1c03510
+something went wrong **correct output~ only applicable to sample text 3**
+something went wrong **correct output~ only applicable to sample text 3**
+Found: bloop in the input file 0 time(s).
+
+BEGINNING TESTS FOR PART 3
+*** Top 5 most frequent words: ***
+1 : the - used 40506 times
+2 : of - used 19652 times
+3 : and - used 14786 times
+4 : a - used 14315 times
+5 : to - used 13761 times
+
+*** Top 5 most frequent words with at least 6 letters ***
+1 : marius - used 1347 times
+2 : valjean - used 1098 times
+3 : himself - used 1063 times
+4 : cosette - used 1000 times
+5 : little - used 971 times
+
+*** Top 5 most frequent words that begin with a ***
+1 : and - used 14786 times
+2 : a - used 14315 times
+3 : at - used 4035 times
+4 : as - used 3225 times
+5 : all - used 2448 times
+dhcp-128-189-242-100:student-files leticianakajima$ 
